@@ -1,0 +1,6 @@
+{
+  "name": "Todo List",
+  "description": "An elegant, dark-themed Todo List app with an AI voice assistant, progress tracking, and celebratory cues.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
