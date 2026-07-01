@@ -7,3 +7,13 @@ plugins {
   alias(libs.plugins.secrets) apply false
   alias(libs.plugins.google.services) apply false
 }
+
+tasks.register<Copy>("copyApk") {
+  from("app/build/outputs/apk/debug/app-debug.apk")
+  into(".build-outputs")
+}
+
+tasks.register<Copy>("copyApkToDownload") {
+  from("app/build/outputs/apk/debug/app-debug.apk")
+  into("APK_DOWNLOAD")
+}
